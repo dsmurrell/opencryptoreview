@@ -6,3 +6,4 @@ log/django.osqa.log
 updateipMOVED
 .DS_Store
 *.pyc
+.idea/
