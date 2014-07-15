@@ -33,6 +33,16 @@
             <input type="hidden" class="validate_email" name="validate_email" value="yes" />
         </form>
     {% endfor %}
+    <script type="text/html" id="simple_form_template">
+        <fieldset id="slot_form">
+              <p id="provider_name_slot">{% trans 'Enter your ' %}%%YOUR_WHAT%%</p>
+              <div><p><span></span>
+                    <input id="input_field" type="text" name="input_field" /><span></span>
+                    <input id="ssignin" name="ssignin" type="submit" value="Login" />
+              </p></div>
+              <input type="hidden" class="validate_email" name="validate_email" value="yes" />
+          </fieldset>
+    </script>
     <script type="text/javascript">
         $(function() {
             var signin_url = "{% url auth_provider_signin provider='PROVIDER' %}";
