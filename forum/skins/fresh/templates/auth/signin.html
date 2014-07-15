@@ -26,13 +26,6 @@
     {% if msg %}
         <p class="error">{{ msg }}</p>
     {% endif %}
-    {% for provider in top_stackitem_providers %}
-        <form class="signin_form" method="POST" action="{% url auth_provider_signin provider=provider.id %}" accept-charset="utf-8">
-            {% csrf_token %}
-            {% include provider.stack_item_template %}
-            <input type="hidden" class="validate_email" name="validate_email" value="yes" />
-        </form>
-    {% endfor %}
     {% for provider in stackitem_providers %}
         <form class="signin_form" method="POST" action="{% url auth_provider_signin provider=provider.id %}" accept-charset="utf-8">
             {% csrf_token %}
