@@ -256,9 +256,9 @@ def question_search(request, keywords):
     feed_url = mark_safe(escape(request.path + "?type=rss&q=" + keywords))
 
     return question_list(request, initial,
-                         _("questions matching '%(keywords)s'") % {'keywords': keywords},
+                         _("papers matching '%(keywords)s'") % {'keywords': keywords},
                          None,
-                         _("questions matching '%(keywords)s'") % {'keywords': keywords},
+                         _("papers matching '%(keywords)s'") % {'keywords': keywords},
                          paginator_context=paginator_context,
                          feed_url=feed_url, feed_sort=rank_feed and (can_rank,) or '-added_at')
 

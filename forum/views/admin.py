@@ -133,7 +133,7 @@ def statistics(request):
     'graphs': [
             {
             'id': 'questions_graph',
-            'caption': _("Questions Graph"),
+            'caption': _("Papers Graph"),
             'data': qgraph_data
             }, {
             'id': 'userss_graph',
@@ -488,7 +488,7 @@ def node_management(request):
                         if node.node_type == "question" and (not node.nis.closed):
                             CloseAction(node=node.leaf, user=request.user, extra=_("bulk close"), ip=request.META['REMOTE_ADDR']).save()
 
-                    message = _("Selected questions were closed")
+                    message = _("Selected papers were closed")
 
                 if action == "hard_delete_selected":
                     ids = [n.id for n in selected_nodes]

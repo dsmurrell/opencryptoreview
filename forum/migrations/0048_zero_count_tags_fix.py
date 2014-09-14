@@ -7,7 +7,7 @@ from django.db import models
 class Migration(DataMigration):
     def forwards(self, orm):
         for tag in orm.Tag.objects.filter(used_count__lt=1):
-            # What we do is a check if there are some questions matching this tag. If there are -- the count is not 0.
+            # What we do is a check if there are some papers matching this tag. If there are -- the count is not 0.
             questions = orm.Node.objects.filter(tags=tag)
             tag.used_count = len(questions)
             tag.save()

@@ -116,8 +116,8 @@ msgstr ""
 msgid "authentication settings"
 msgstr ""
 "<span class='big strong'>Adjust frequency of email updates.</span> Receive "
-"updates on interesting questions by email, <strong><br/>help the community</"
-"strong> by answering questions of your colleagues. If you do not wish to "
+"updates on interesting papers by email, <strong><br/>help the community</"
+"strong> by responding to papers of your colleagues. If you do not wish to "
 "receive emails - select 'no email' on all items below.<br/>Updates are only "
 "sent when there is any new activity on selected items."
 
@@ -1425,7 +1425,7 @@ msgid "Basic settings"
 msgstr ""
 "<span class='big strong'>Adjust frequency of email updates.</span> Receive "
 "updates on interesting questions by email, <strong><br/>help the community</"
-"strong> by answering questions of your colleagues. If you do not wish to "
+"strong> by responding to papers of your colleagues. If you do not wish to "
 "receive emails - select 'no email' on all items below.<br/>Updates are only "
 "sent when there is any new activity on selected items."
 
@@ -1688,7 +1688,7 @@ msgid "Enable community wiki"
 msgstr ""
 
 #: .\forum\settings\form.py:9
-msgid "Can questions or answers be marked as community wiki."
+msgid "Can papers or responses be marked as community wiki."
 msgstr ""
 
 #: .\forum\settings\form.py:13
@@ -1731,19 +1731,19 @@ msgid "If a question's content can be empty."
 msgstr ""
 
 #: .\forum\settings\form.py:45
-msgid "Required number of tags per question"
+msgid "Required number of tags per paper"
 msgstr ""
 
 #: .\forum\settings\form.py:46
-msgid "How many tags are required in questions."
+msgid "How many tags are required in papers."
 msgstr ""
 
 #: .\forum\settings\form.py:50
-msgid "Maximum number of tags per question"
+msgid "Maximum number of tags per paper"
 msgstr ""
 
 #: .\forum\settings\form.py:51
-msgid "How many tags are allowed in questions."
+msgid "How many tags are allowed in papers."
 msgstr ""
 
 #: .\forum\settings\form.py:55
@@ -1926,13 +1926,13 @@ msgid ""
 msgstr ""
 
 #: .\forum\settings\minrep.py:52
-msgid "Minimum reputation to retag others questions"
+msgid "Minimum reputation to retag others papers"
 msgstr ""
 
 #: .\forum\settings\minrep.py:53
 msgid ""
 "The minimum reputation an user must have to be allowed to retag others "
-"questions."
+"papers."
 msgstr ""
 
 #: .\forum\settings\minrep.py:56
@@ -2008,7 +2008,7 @@ msgstr ""
 
 #: .\forum\settings\minrep.py:84
 #, fuzzy
-msgid "Minimum reputation to convert answers to questions"
+msgid "Minimum reputation to convert answers to papers"
 msgstr "user karma"
 
 #: .\forum\settings\minrep.py:85
@@ -2030,8 +2030,8 @@ msgstr ""
 msgid "Moderation settings"
 msgstr ""
 "<span class='big strong'>Adjust frequency of email updates.</span> Receive "
-"updates on interesting questions by email, <strong><br/>help the community</"
-"strong> by answering questions of your colleagues. If you do not wish to "
+"updates on interesting papers by email, <strong><br/>help the community</"
+"strong> by responding to papers of your colleagues. If you do not wish to "
 "receive emails - select 'no email' on all items below.<br/>Updates are only "
 "sent when there is any new activity on selected items."
 
@@ -2157,7 +2157,7 @@ msgstr ""
 
 #: .\forum\settings\repgain.py:37
 msgid ""
-"Reputation a user gains for accepting an answer to one of his questions."
+"Reputation a user gains for accepting an answer to one of his papers."
 msgstr ""
 
 #: .\forum\settings\repgain.py:40
@@ -6711,7 +6711,7 @@ msgstr "Tags"
 
 #: .\forum\skins\default\templates\users\subscriptions_settings.html.py:50
 #: .\forum\skins\fresh\templates\users\subscriptions_settings.html.py:50
-msgid "All questions matching my interesting tags"
+msgid "All papers matching my interesting tags"
 msgstr "All papers matching my interesting tags"
 
 #: .\forum\skins\default\templates\users\subscriptions_settings.html.py:53

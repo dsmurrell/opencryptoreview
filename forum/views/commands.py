@@ -361,16 +361,16 @@ def close(request, id, close):
     user = request.user
 
     if not user.is_authenticated():
-        raise AnonymousNotAllowedException(_('close questions'))
+        raise AnonymousNotAllowedException(_('close papers'))
 
     if question.nis.closed:
         if not user.can_reopen_question(question):
-            raise NotEnoughRepPointsException(_('reopen questions'))
+            raise NotEnoughRepPointsException(_('reopen papers'))
 
         question.nstate.closed.cancel(user, ip=request.META['REMOTE_ADDR'])
     else:
         if not request.user.can_close_question(question):
-            raise NotEnoughRepPointsException(_('close questions'))
+            raise NotEnoughRepPointsException(_('close papers'))
 
         reason = request.POST.get('prompt', '').strip()
 

@@ -386,7 +386,7 @@ def user_votes(request, user, **kwargs):
 
     return {"view_user" : user, "votes" : votes}
 
-@user_view('users/questions.html', 'favorites', _('favorites'), _('questions that user selected as his/her favorite'))
+@user_view('users/questions.html', 'favorites', _('favorites'), _('papers that user selected as his/her favorite'))
 def user_favorites(request, user, **kwargs):
     favorites = FavoriteAction.objects.filter(canceled=False, user=user)
 
